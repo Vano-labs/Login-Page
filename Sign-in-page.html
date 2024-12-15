@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href=
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+    <style>
+
+      div{
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+      }
+
+      body{
+        margin: 0;
+        cursor: url('cursor.cur'), auto;
+      }
+      .vid{
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .login-box{
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(40px);
+        border-radius: 10px;
+        box-shadow: 1px 2px 5px rgba(0,0,0,0.15);
+      }
+
+      .flex{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position:absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+      }
+
+      .head{
+        font-size: 29px;
+        font-weight: 700;
+        color: white;
+        margin-bottom: 25px;
+        margin-top: 25px;
+      }
+
+      .text-box-container i{
+        position: absolute;
+        color: white;
+        right: 85px;
+        margin-top: 10px;
+      }
+
+      .text-box{
+        position: relative;
+        width: 250px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-color: rgba(0,0,0,0);
+        border: solid;
+        border-width: 1px;
+        border-color:white ;
+        border-radius: 25px;
+        margin-bottom: 20px;
+        padding-left: 10px;
+        color: White;
+        margin-left: 15px;
+        margin-right: 15px;
+      }
+
+
+
+      .text-box::placeholder{
+        color: white;
+      }
+
+      .Container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 14px;
+        vertical-align: top;
+        margin-bottom: 15px;
+
+      }
+      .remember-me{
+        margin-right: 25px;
+      }
+
+      .button{
+        width: 250px;
+        border: none;
+        background-color: white;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        font-size: 18px;
+        border-radius: 40px;
+        margin-bottom: 25px;
+        cursor: pointer;
+      }
+
+      .sign-in{
+        font-size: 14px;
+        margin-bottom: 50px;
+      }
+
+      input:focus {
+        outline: none;
+      }
+
+      a{
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      .header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 75px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        backdrop-filter: blur(40px);
+      }
+
+      .header div{
+        font-size: 36px;
+      }
+
+      .sub{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 35px;
+        color: white;
+        background-color: black;
+        cursor: pointer;
+        margin-right: 15px;
+        margin-top: 30px;
+        border-radius: 1000px;
+        border: none;
+      }
+
+      .sub-header{
+        display: flex;
+        margin-top: -20px;
+      }
+
+      .sub-dev{
+        margin-top: 30px;
+        margin-right: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 40px;
+        padding-right: 40px;
+        border-radius: 40px;
+        border: none;
+      }
+
+      .name{
+        margin-left: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="video">
+        <video src="video4.mp4" autoplay muted loop class="vid" ></video>
+      </div>
+
+      <div class="header">
+        <div class="name">Vano Lab's</div>
+        <div class="sub-header">
+          <div>
+            <button class="sub"><i class="fa fa-instagram icon"></i></button>
+          </div>
+
+          <div>
+            <button class="sub"><i class="fa fa-facebook icon"></i></button>
+          </div>
+
+          <div>
+            <button class="sub"><i class="fa fa-twitter icon"></i></button>
+          </div>
+
+          <div>
+            <button class="sub-dev">
+              Sign-in
+            </button>
+          </div>
+
+
+        </div>
+      </div>
+
+
+      <div class="flex">
+        <div class="login-box">
+          <div class="head">Sign up</div>
+          <div class="text-box-container">
+            <input type="text" placeholder="Username" class="text-box">
+            <i class="fa fa-user icon"></i>
+          </div>
+
+          <div class="text-box-container">
+            <input type="password" placeholder="password" class="text-box">
+            <i class="fa fa-lock icon" class="icon"></i>
+          </div>
+          <div class="text-box-container">
+            <input type="email" placeholder="Email" class="text-box">
+            <i class="fa fa-envelope icon" class="icon"></i>
+          </div>
+            <div class="Container"><input type="checkbox" > Remember me</div>
+          <div >
+            <a href="Login-Page.html">
+              <button class="button">
+                Register
+              </button>
+            </a>
+          </div>
+          <div class="sign-in">have an account? <strong><a href="Login-page.html">Log in</a></strong></div>
+        </div>
+      </div>
+    </div>
+    
+  </body>
+</html>
